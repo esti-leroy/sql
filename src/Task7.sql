@@ -1,0 +1,5 @@
+CREATE PROCEDURE pSalary(empId NUMBER, nSalary NUMBER) AS
+BEGIN
+    UPDATE HR.EMPLOYEES set SALARY = nSalary where EMPLOYEE_ID = empId;
+    COMMIT;
+END;
